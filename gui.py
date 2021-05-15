@@ -7,6 +7,7 @@ from app import Server
 root = tkinter.Tk()
 root.resizable(False, False)
 root.geometry('350x120')
+open(".file", "w+").close()
 file = open('.file', 'r')
 if len(file.read()) == 0:
 	text = "No file selected :("
