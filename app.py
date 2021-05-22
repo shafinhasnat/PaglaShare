@@ -3,7 +3,6 @@ from flask import Flask, send_file, request
 class Server:
 	def __init__(self):
 		self.app = Flask(__name__)
-		self.test = "ddd"
 		@self.app.route("/", methods=['GET', 'POST'])
 		def index():
 			file = open('.file', 'r')
@@ -12,4 +11,4 @@ class Server:
 				print("success")
 			except:
 				print("error")
-				return "error"
+				return "Make sure you have selected your file to share in PaglaShare-Desktop"
